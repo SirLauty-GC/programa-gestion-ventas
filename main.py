@@ -54,9 +54,9 @@ class Main():
         self.tabla_principal.insert("", END, values=(nuevo_id, nuevo_nombre, "N/A"))
 
     def comando_borrar(self):
-        selected_item = self.tabla_principal.selection()
-        if selected_item:
-            self.tabla_principal.delete(selected_item)
+        fila_seleccionada = self.tabla_principal.selection()
+        if fila_seleccionada:
+            self.tabla_principal.delete(fila_seleccionada)
 
 if __name__ == "__main__":
     programa = Main()
